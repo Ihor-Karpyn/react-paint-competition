@@ -1,35 +1,45 @@
-html {
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+iframe {
+  display: none;
 }
 
-label,
-button {
-  cursor: pointer;
+body {
+  margin: 0;
 }
 
-.error {
-  color: red;
+* {
+  box-sizing: border-box;
 }
 
-.TodoInfo {
-  width: max-content;
-  padding: 8px;
-  margin: 12px 0;
-  border: 1px solid #000;
-  border-radius: 8px;
-  background-color: antiquewhite;
+.area {
+  width: 506px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
 
-  &__title {
-    margin: 4px 0;
-    font-size: inherit;
-    color: #f00;
-  }
-
-  &--completed &__title {
-    color: #080;
-  }
+  border: 3px dashed transparent;
+  transition: border-color 0.3s;
 }
 
-.UserInfo {
-  font-style: italic;
+.cell {
+  width: 25px;
+  height: 25px;
+  border: 1px solid silver;
+}
+
+.cell--active {
+  background-color: green;
+}
+
+.btn {
+  transition: transofm 0.5s, background-color 0.5s;
+}
+
+.btn-active {
+  transform: scale(1.1);
+  background-color: #c8ff79;
+}
+
+.area--edit {
+  border-color: green;
 }

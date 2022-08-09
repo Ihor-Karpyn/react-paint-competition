@@ -1,4 +1,7 @@
 import ReactDOM from 'react-dom';
-import { App } from './App';
+import { Competition } from './Competition';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(
+  <Competition />,
+  document.getElementById('root'),
+);
